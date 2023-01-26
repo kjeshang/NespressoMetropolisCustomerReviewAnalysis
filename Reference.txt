@@ -1,0 +1,13 @@
+Chrome Driver Download Link -- Version 109.0.5414.119 (Official Build) (64-bit):
+https://chromedriver.storage.googleapis.com/index.html?path=109.0.5414.74/
+
+Web Scraping Reference:
+https://medium.com/@isguzarsezgin/scraping-google-reviews-with-selenium-python-23135ffcc331
+
+https://stackoverflow.com/questions/61117823/how-to-get-text-of-label-tag-with-webdriver-librairy-of-python
+
+https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python
+
+https://towardsdatascience.com/scraping-google-maps-reviews-in-python-2b153c655fc2
+
+https://www.linkedin.com/pulse/webscrape-google-map-reviews-using-selenium-python-choy-siew-wearn?trk=pulse-article_more-articles_related-content-card
