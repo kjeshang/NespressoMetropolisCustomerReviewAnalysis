@@ -11,3 +11,15 @@ https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-s
 https://towardsdatascience.com/scraping-google-maps-reviews-in-python-2b153c655fc2
 
 https://www.linkedin.com/pulse/webscrape-google-map-reviews-using-selenium-python-choy-siew-wearn?trk=pulse-article_more-articles_related-content-card
+
+https://stackoverflow.com/questions/30002313/finding-elements-by-class-name-with-selenium-in-python
+
+General Python:
+https://bobbyhadz.com/blog/python-round-number-to-nearest-100
+
+
+-----
+# ele = driver.find_element("xpath",'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]')
+# driver.execute_script('arguments[0].scrollBy(0, 5000);', ele)
+# time.sleep(5)
+
