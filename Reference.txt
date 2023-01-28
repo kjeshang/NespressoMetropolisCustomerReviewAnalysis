@@ -17,6 +17,11 @@ https://stackoverflow.com/questions/30002313/finding-elements-by-class-name-with
 General Python:
 https://bobbyhadz.com/blog/python-round-number-to-nearest-100
 
+https://www.programiz.com/python-programming/methods/list/remove
+
+
+https://www.learndatasci.com/solutions/python-string-contains/#:~:text=The%20easiest%20and%20most%20effective,can't%20find%20the%20substring.
+
 
 -----
 # ele = driver.find_element("xpath",'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]')
@@ -37,3 +42,6 @@ driver.find_elements(By.CLASS_NAME, 'wiI7pd')[0].text
 
 # The response from the owner
 driver.find_elements(By.CLASS_NAME, 'wiI7pd')[1].text
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[9]
+m6QErb
