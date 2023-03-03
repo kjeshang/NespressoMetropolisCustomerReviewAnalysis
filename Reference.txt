@@ -19,9 +19,47 @@ https://bobbyhadz.com/blog/python-round-number-to-nearest-100
 
 https://www.programiz.com/python-programming/methods/list/remove
 
-
 https://www.learndatasci.com/solutions/python-string-contains/#:~:text=The%20easiest%20and%20most%20effective,can't%20find%20the%20substring.
 
+
+Data Cleaning:
+
+https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html
+
+https://www.learndatasci.com/solutions/python-string-contains/#:~:text=The%20easiest%20and%20most%20effective,can't%20find%20the%20substring
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html
+
+https://www.digitalocean.com/community/tutorials/pandas-dataframe-apply-examples
+
+https://stackoverflow.com/questions/15891038/change-column-type-in-pandas
+
+https://www.digitalocean.com/community/tutorials/python-remove-character-from-string
+
+https://www.geeksforgeeks.org/display-the-pandas-dataframe-in-table-style/
+
+https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html
+
+https://statisticsglobe.com/add-subtract-weeks-from-date-python
+
+https://www.geeksforgeeks.org/how-to-add-and-subtract-days-using-datetime-in-python/
+
+https://stackoverflow.com/questions/546321/how-do-i-calculate-the-date-six-months-from-the-current-date-using-the-datetime
+
+https://rollbar.com/blog/python-typeerror-nonetype-object-is-not-iterable/
+
+
+Exploratory Data Analysis:
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reset_index.html
+
+https://stackoverflow.com/questions/58476654/how-to-remove-or-hide-x-axis-labels-from-a-seaborn-matplotlib-plot
+
+https://www.w3schools.com/python/pandas/ref_df_set_index.asp
+
+https://matplotlib.org/stable/gallery/pie_and_polar_charts/pie_features.html
+
+https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
 
 -----
 # ele = driver.find_element("xpath",'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]')
