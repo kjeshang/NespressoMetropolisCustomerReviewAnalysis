@@ -61,25 +61,58 @@ https://matplotlib.org/stable/gallery/pie_and_polar_charts/pie_features.html
 
 https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948
 
------
-# ele = driver.find_element("xpath",'//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]')
-# driver.execute_script('arguments[0].scrollBy(0, 5000);', ele)
-# time.sleep(5)
+Sentiment Analysis Exploration:
 
-# Reviewer name
-driver.find_element(By.CLASS_NAME, 'd4r55').text
+https://www.youtube.com/watch?v=4GF-Knz9B10&list=LL&index=1
 
-# Number of reviews given
-driver.find_element(By.CLASS_NAME, 'RfnDt').text
+https://www.youtube.com/watch?v=QpzMWQvxXWk&list=LL&index=1
 
-# When the review was given
-driver.find_element(By.CLASS_NAME, 'rsqaWe').text
+https://www.youtube.com/watch?v=O_B7XLfx0ic
 
-# The actual review
-driver.find_elements(By.CLASS_NAME, 'wiI7pd')[0].text
+https://textblob.readthedocs.io/en/dev/install.html
 
-# The response from the owner
-driver.find_elements(By.CLASS_NAME, 'wiI7pd')[1].text
+https://medium.com/geekculture/simple-emotion-classification-in-python-40fb24692541
 
-//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[9]
-m6QErb
+https://www.geeksforgeeks.org/emotion-classification-using-nrc-lexicon-in-python/
+
+https://stackoverflow.com/questions/45823078/how-to-sync-colors-across-subplots-of-different-types-seaborne-matplotlib
+
+https://dev.to/thalesbruno/subplotting-with-matplotlib-and-seaborn-5ei8
+
+Sentiment Predictive Modeling:
+
+https://alvinntnu.github.io/NTNU_ENC2045_LECTURES/nlp/ml-sklearn-classification.html
+
+https://medium.com/analytics-vidhya/sentiment-analysis-on-amazon-reviews-using-tf-idf-approach-c5ab4c36e7a1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
