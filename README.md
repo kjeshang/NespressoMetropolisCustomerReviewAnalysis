@@ -19,12 +19,20 @@ This project was completed using the following devices, tools, and technologies.
     * Programming Language: Python
         * Official Version 3.10.1 using Asus VivoBook; used for data scraping/extraction
         * Anaconda Navigator version (3.9.11) using Macbook Air 2014; used for all stages _after_ data scraping/extraction
-    * Packages: Selenium (with ChromeDriver.exe), Datetime/Time/Dateutil, Pandas, Numpy, Re, Matplotlib, Seaborn, WordCloud, TQDM, itertools, NLTK, String, TextBlob, NRCLex, Scikit Learn
+    * Important Packages: Selenium (with ChromeDriver.exe), Datetime/Time/Dateutil, Pandas, Numpy, Re, Matplotlib, Seaborn, WordCloud, TQDM, Itertools, NLTK, String, TextBlob, NRCLex, Scikit Learn
 * Development Environment
     * Jupyter Notebook 
     * Software 
         * Microsoft Visual Studio Code; used for data scraping/extraction
         * Anaconda Navigator; used for all stages _after_ data scraping/extraction
+
+## Data Scraping/Extraction
+
+This is the first stage of the project but it is also the hardest. Despite customer Google Reviews being freely accessible online via Google Maps, I am unable to retrieve the data in a traditional sense (i.e., download a CSV/JSON file). Being simply a Coffee Specialist at the Boutique, I would not have access to save this data locally on an endpoint because I am neither in a management-level position nor part of the Nespresso Canada Social Media team. Therefore, the only option was to programmatically extract the data using the Selenium package and the ChromeDriver executable file. 
+
+In other words, I coded a scraper bot to perform the following.
+1. Open the Google Chrome web browser
+2. 
 
 ## Data Cleaning
 
