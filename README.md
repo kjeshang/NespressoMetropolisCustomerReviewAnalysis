@@ -57,9 +57,21 @@ In this stage of the project, the raw Google Reviews data is imported and is cle
 * Clean the **_Stars Given_** column by removing the word "stars" and any extra whitespace. Then convert the column data type to numeric.
 * Change the order of columns to be more logical, and change column names when necessary.
 
+Below is a tabular breakdown of the cleaned Google Review data in terms of columns and data types.
+|Column|Data Type|
+|--|--|
+|Reviewer Name|object|
+|Reviewer Title|object|
+|Total Reviews Given|int64|
+|Review|object|
+|Stars Given|int64|
+|Year of Review|int64|
+|Time of Review|object|
+|Webscraping Datetime|object|
+
 ## Exploratory Data Analysis
 
-This stage is somewhat self explanatory, but it is important in order to get "a feel" of the now cleaned Google Reviews dataset by performing Exploratory Data Analysis (EDA).
+This stage is somewhat self explanatory, but it is important in order to get "a feel" of the now cleaned Google Reviews dataset by performing Exploratory Data Analysis (EDA). Prior to this, it is important to import the data and filter it such that the **_Year of Review_** is between 2019 to 2022. In other words, the data should be filtered to reflect 2019 to 2022 as the current year, 2023, is still in progress.
 
 ### Fig 1. Distribution by Stars
 ![Fig 1. Distribution by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/1.png?raw=true)
