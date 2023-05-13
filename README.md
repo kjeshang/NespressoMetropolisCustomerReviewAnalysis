@@ -101,10 +101,20 @@ There is a higher proportion of reviews received from customers that are of "Loc
 ### Fig 5. Stars Given by Reviewer Title
 ![Fig 5. Stars Given by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/5.png?raw=true)
 
-The interesting observation in this chart is that almost 50% more reviewers with "Local Guide" status provided 5-star rating compared to reviewers without "Local Guide" status. Furthermore, reviewers with "Local Guide" status also provided more 4-star and 3-star rating compared to reviewers without "Local Guide" status. This infers that Nespresso Metrotown's service quality is excellent, and it is truly acknowledged as well as legitimate. A confirmation of this notion could be that there are more 2-star and 1-star rating provided by reviewers without "Local Guide" status. That being said, there is still a sizeable proportion of 1-star reviews form reviewers with "Local Guide" status. That being said, certain negative perceptions about Nespresso Metrotown's service quality may be legitimate.
+The interesting observation in this chart is that almost 50% more reviewers with "Local Guide" status provided 5-star rating compared to reviewers without "Local Guide" status. Furthermore, reviewers with "Local Guide" status also provided more 4-star and 3-star rating compared to reviewers without "Local Guide" status. This infers that Nespresso Metrotown's service quality is excellent, and it is truly acknowledged as well as legitimate. A confirmation of this notion could be that there are more 2-star and 1-star rating provided by reviewers without "Local Guide" status. That being said, there is still a sizeable proportion of 1-star reviews form reviewers with "Local Guide" status. Thus, certain negative perceptions about Nespresso Metrotown's service quality may be legitimate.
 
+### Fig 6. Percentage Proportion of Review Given vs No Review Given
+![Fig 6. Percentage Proportion of Review Given vs No Review Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/6.png?raw=true)
 
+The pie chart above indicates that only nearly 70% of the reviewers wrote a review in addition to providing a star rating. Thus, little more than 30% of the reviewers only provided a star rating, but did not write a review. Regardless whether the written reviews are positive, negative, or in-between, the service provided to the customers is memorable enough for them to provide a written review.
 
+### Fig 7. Length of Reviews by Number of Words Used - Bar Chart
+![Fig 7. Length of Reviews by Number of Words Used - Bar Chart](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/7.png?raw=true)
+
+Despite nearly 70% of reviewers providing a written review, when comparing the word count of written reviews, most reviewers provided written reviews that 
+
+### Fig 8. Length of Reviews by Number of Words Used - Histogram
+![Fig 8. Length of Reviews by Number of Words Used - Histogram](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/8.png?raw=true)
 
 
 
