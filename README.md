@@ -1,5 +1,6 @@
 # NespressoMetropolisCustomerReviewAnalysis
 **Kunal Jeshang - Coffee Specialist** _(Project Timeline: January 2023 to May 2023)_
+> Report/ReadMe in Progress
 
 ## Introduction
 This project was created to assist the Nespresso Metrotown Boutique understand its service quality in terms of customer experience and optimal execution of business operations. As management of the Boutique predominantly refers to Google Reviews to periodically assess service quality, the data utilized for this project were Google Reviews received between 2019 to 2022. Thus, reviews received in 2023 were not considered for analysis. In turn, this project is a cumulative annual analysis of our service quality until 2022 year-end.
@@ -75,3 +76,37 @@ This stage is somewhat self explanatory, but it is important in order to get "a 
 
 ### Fig 1. Distribution by Stars
 ![Fig 1. Distribution by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/1.png?raw=true)
+Overall, our service quality is good but not consistent. There is a higher distribution of 5-star reviews received throughout the years. The Boutique has also received a relatively lower proportionate amount of reviews with 1-star and 2-star rating.
+
+### Fig 2. Reviews by Stars Given over the years
+![Fig 2. ](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/2.png?raw=true)
+There has been a significant dip in the number of reviews received in 2021, and then there was a sharp increase of the number of reviews in 2022. This is due to to the Covid-19 pandemic where there was limited in-person services provided at Nespresso. Therefore, customers would not be able to experience our in-person customer service to provide Google Reviews. Below are some general observations:
+* Significant increase in 1-star reviews in 2022 comapared to 2021.
+* Stagnant 2-star reviews throughout the years.
+* Historically, there has been a decrease in 4-star reviews but there was a slight uptick in 2022.
+* There has been a significant increase and then a sharp dip in 5-star reviews post-2020, and then a sharp increase post-2021.
+
+### Fig 3. Number of Reviews over the years
+![Fig 3. Number of Reviews over the years](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/3.png?raw=true)
+Interestingly, the boutique received maximum reviews in 2020, yet minimal reviews in 2021 despite the Covid pandemic still at large. Post-pandemic levels of reviews are equivalent to pre-pandemic levels of reviews.
+
+### Fig 4. Proportion of Reviewers with "Local Guide" Status
+![Fig 4. Proportion of Reviewers with "Local Guide" Status](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/4.png?raw=true)
+There is a higher proportion of reviews received from customers that are of "Local Guide" status, yet there are a lot of reviews received from customers that are not of "Local Guide" statis/ Tjos cpi;d siggest a higher amount of subjective reviews.
+
+### Fig 5. Stars Given by Reviewer Title
+![Fig 5. Stars Given by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/5.png?raw=true)
+The interesting observation in this chart is that almost 50% more reviewers with "Local Guide" status provided 5-star rating compared to reviewers without "Local Guide" status. Furthermore, reviewers with "Local Guide" status also provided more 4-star and 3-star rating compared to reviewers without "Local Guide" status. This infers that Nespresso Metrotown's service quality is excellent, and it is truly acknowledged as well as legitimate. A confirmation of this notion could be that there are more 2-star and 1-star rating provided by reviewers without "Local Guide" status. That being said, there is still a sizeable proportion of 1-star reviews form reviewers with "Local Guide" status. That being said, certain negative perceptions about Nespresso Metrotown's service quality may be legitimate.
+
+
+
+
+
+
+
+
+
+
+
+
+
