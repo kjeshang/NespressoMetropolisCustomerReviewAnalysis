@@ -96,7 +96,7 @@ Interestingly, the boutique received maximum reviews in 2020, yet minimal review
 ### Fig 4. Proportion of Reviewers with "Local Guide" Status
 ![Fig 4. Proportion of Reviewers with "Local Guide" Status](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/4.png?raw=true)
 
-There is a higher proportion of reviews received from customers that are of "Local Guide" status, yet there are a lot of reviews received from customers that are not of "Local Guide" statis/ Tjos cpi;d siggest a higher amount of subjective reviews.
+There is a higher proportion of reviews received from customers that are of "Local Guide" status, yet there are a lot of reviews received from customers that are not of "Local Guide" status that suggests a higher amount of subjective reviews.
 
 ### Fig 5. Stars Given by Reviewer Title
 ![Fig 5. Stars Given by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/5.png?raw=true)
