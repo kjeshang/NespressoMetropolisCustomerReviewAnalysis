@@ -111,12 +111,12 @@ The pie chart above indicates that only nearly 70% of the reviewers wrote a revi
 ### Fig 7. Length of Reviews by Number of Words Used - Bar Chart
 ![Fig 7. Length of Reviews by Number of Words Used - Bar Chart](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/7.png?raw=true)
 
-Despite nearly 70% of reviewers providing a written review, when comparing the word count of written reviews, most reviewers provided written reviews that 
+Despite nearly 70% of reviewers providing a written review, when comparing the word count of written reviews, there is a variation in terms of the number of words used per reviewer based on the bar chart. The number of reviews without a written component outweighs the number of reviews with a written component that is more than or equal to two words.
 
 ### Fig 8. Length of Reviews by Number of Words Used - Histogram
 ![Fig 8. Length of Reviews by Number of Words Used - Histogram](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/8.png?raw=true)
 
-
+In the histogram, it can be seen that the majority of the number of words used for written reviews are less than 150. There is also an anomaly whereby there has been a handful of reviewers that wrote around 300 words for their review. This is indicative of an anomaly occurrence whereby the reviewer may have experienced a very positive or negative experience in terms of service quality at Nespresso Metrotown branch. Despite the anomaly, the histogram indicates a right-skewed distribution with the majority of the reviews having a  word count less than 150.
 
 
 
