@@ -74,6 +74,8 @@ Below is a tabular breakdown of the cleaned Google Review data in terms of colum
 
 This stage is somewhat self explanatory, but it is important in order to get "a feel" of the now cleaned Google Reviews dataset by performing Exploratory Data Analysis (EDA). Prior to this, it is important to import the data and filter it such that the **_Year of Review_** is between 2019 to 2022. In other words, the data should be filtered to reflect 2019 to 2022 as the current year, 2023, is still in progress.
 
+To see a list of the top reviewers overall as well as top reviewers based on specific condition, please refer to the latter half of the [EDA](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/3_EDA.ipynb) Jupyter Notebook. This is to protect both the Google Accounts and identities of the customers that provided reviews to not be parsed by any internet search engines.
+
 ### Fig 1. Distribution by Stars
 ![Fig 1. Distribution by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/2_EDA/1.png?raw=true)
 
