@@ -120,7 +120,17 @@ Despite nearly 70% of reviewers providing a written review, when comparing the w
 
 In the histogram, it can be seen that the majority of the number of words used for written reviews are less than 150. There is also an anomaly whereby there has been a handful of reviewers that wrote around 300 words for their review. This is indicative of an anomaly occurrence whereby the reviewer may have experienced a very positive or negative experience in terms of service quality at Nespresso Metrotown branch. Despite the anomaly, the histogram indicates a right-skewed distribution with the majority of the reviews having a  word count less than 150.
 
+## Sentiment Analysis - Exploration
 
+This stage of the project, after importing the necessary packages, the cleaned Google Reviews is imported and filtered to only include reviews received from 2019 to 2022. Prior to performing any natural language processing (NLP), the Google Reviews data must be pre-processed; specifically, the **_Review_** column values for each row. NLP pre-processing is necessary to perform appropriate sentiment analysis. Below are the important steps involved in the NLP pre-processing.
+1. Perform word tokenization such that each word in the **_Review_** column value is separated by a comma in a list. Now, each word are referred to as a token.
+2. Perform lemmatization such that each token that is a word in its extended form is reduced to its base form (i.e., Caring --> Care).
+3. Remove any tokens that are punctuation or english stop words.
+4. Perform Part-of-Speech tagging on each token to only include adjectives, verbs, nouns, and adverbs.
+5. For each token, reduce any occurrence of additional whitespace.
+6. Combine all tokens, in the comma-separated list, together into a unified sentence. 
+7. Repeat steps 1 through 5 per row for each **_Review_** column value.
+8. Create a new column called **_Review Cleaned_** and save the pre-processed column values to it.
 
 
 
