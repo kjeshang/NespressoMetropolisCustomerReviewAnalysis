@@ -122,7 +122,7 @@ In the histogram, it can be seen that the majority of the number of words used f
 
 ## Sentiment Analysis - Exploration
 
-This stage of the project, after importing the necessary packages, the cleaned Google Reviews is imported and filtered to only include reviews received from 2019 to 2022. Prior to performing any natural language processing (NLP), the Google Reviews data must be pre-processed; specifically, the **_Review_** column values for each row. NLP pre-processing is necessary to perform appropriate sentiment analysis. Below are the important steps involved in the NLP pre-processing.
+This stage of the project, after importing the necessary packages, the cleaned Google Reviews is imported and filtered to only include reviews received from 2019 to 2022. Prior to performing any natural language processing (NLP), the Google Reviews data must be pre-processed; specifically, the **_Review_** column values for each row. NLP pre-processing is necessary to perform appropriate sentiment analysis. Below are the important steps involved in the NLP pre-processing:
 1. Perform word tokenization such that each word in the **_Review_** column value is separated by a comma in a list. Now, each word are referred to as a token.
 2. Perform lemmatization such that each token that is a word in its extended form is reduced to its base form (i.e., Caring --> Care).
 3. Remove any tokens that are punctuation or english stop words.
@@ -132,7 +132,16 @@ This stage of the project, after importing the necessary packages, the cleaned G
 7. Repeat steps 1 through 5 per row for each **_Review_** column value.
 8. Create a new column called **_Review Cleaned_** and save the pre-processed column values to it.
 
+Post-completion of NLP pre-processing, sentiment analysis is performed. There are essentially four methods.
+1. Word Cloud
+2. **VADER Sentiment Scoring:** Able to provide a score for positivity, negativity, and neutrality, as well as an overall compound score. VADER refers to Valence Aware Dictionary and sentiment. This method incorporates a Bag-of-Words approach, which considers simply the frequwncy
+3. Textblob Sentiment Scoring
+4. Emotion Classification using Lexicon based method
 
+### Word Cloud
+
+#### Fig 9. Word Cloud
+![Fig 9. Word Cloud](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/1.png?raw=true)
 
 
 
