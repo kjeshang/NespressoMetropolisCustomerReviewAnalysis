@@ -133,15 +133,32 @@ This stage of the project, after importing the necessary packages, the cleaned G
 8. Create a new column called **_Review Cleaned_** and save the pre-processed column values to it.
 
 Post-completion of NLP pre-processing, sentiment analysis is performed. There are essentially four methods.
-1. Word Cloud
-2. **VADER Sentiment Scoring:** Able to provide a score for positivity, negativity, and neutrality, as well as an overall compound score. VADER refers to Valence Aware Dictionary and sentiment. This method incorporates a Bag-of-Words approach, which considers simply the frequwncy
-3. Textblob Sentiment Scoring
-4. Emotion Classification using Lexicon based method
+1. **Word Cloud:** A simplistic method that considers the most highly used words overall, and displays them in the form of a word cloud. Interpretation of the overall sentiment of Nespresso Metrotown is determined by the reader. 
+2. **VADER Sentiment Scoring:** Able to provide a score for positivity, negativity, and neutrality, as well as an overall compound score to the reviews. VADER refers to Valence Aware Dictionary and sentiment. This method incorporates a Bag-of-Words approach, which considers simply the frequency of the words used.
+3. **Textblob Sentiment Scoring:** This method functions similarly to VADER method, but determines a numerical score for the subjectivity and polarity of the written review. Therefore, the level of objectivity & validity (or lackthereof) can be understood using this method.
+4. **Emotion Classification using Lexicon based method:** This method is able to provide numerical scores to a collection ten emotions of varying levels of positivity & negativity based on the reviews.
 
 ### Word Cloud
 
 #### Fig 9. Word Cloud
 ![Fig 9. Word Cloud](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/1.png?raw=true)
+
+The word cloud is not quite conclusive. Larger the size of the words means higher the occurrence of the word. Most of the words of a larger size are neutral in nature. The remaining words that are of a smaller size are either neutral as well as of negative sentiment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
