@@ -177,7 +177,18 @@ The compound score has fluctuated over the years but has remained less than 0.5,
 #### Fig 13. Compound Score by Reviewer Title
 ![Fig 13. Compound Score by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/5.png?raw=true)
 
+The bar chart suggests that reviewers with "Local Guide" status on Google Reviews overall provide more positive reviews compared to reviewers without "Local Guide" status. This is because compound score for 'Local Guide' is higher than that of 'No Title'. Thus, it can be inferred that the reviews written by those with "Local Guide" status are more constructive and/or reasonable comparatively to the reviewers without "Local Guide" status.
 
+#### Fig 14. Reviewer Title Sentiment Score by Sentiment Classification
+![Fig 14. Reviewer Title Sentiment Score by Sentiment Classification](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/6.png?raw=true)
+
+|Sentiment|Analysis|
+|--|--|
+|Negative|The negative score for reviewers without "Local Guide" status far exceeds the negative score for those with "Local Guide" status. This can suggest that those without "Local Guide" status have a higher likelihood of writing harsher reviews.|
+|Neutral|Interestingly, the neutral score for reviewers with "No Title" only slightly exceeds the neutral score for reviewers with "Local Guide" status. This can suggest that overall, there are a lot of written reviews are inconclusive in terms of sentiment along with a sizeable portion of reviewers not providing a written review.|
+|Positive|The positive score for reviewers with "Local Guide" status exceeds the positive score for those without "Local Guide" status. This could suggest that reviewers with "Local Guide" status are more reasonable with their expectations.|
+
+### Textblob Sentiment Scoring
 
 
 
