@@ -143,7 +143,39 @@ Post-completion of NLP pre-processing, sentiment analysis is performed. There ar
 #### Fig 9. Word Cloud
 ![Fig 9. Word Cloud](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/1.png?raw=true)
 
-The word cloud is not quite conclusive. Larger the size of the words means higher the occurrence of the word. Most of the words of a larger size are neutral in nature. The remaining words that are of a smaller size are either neutral as well as of negative sentiment.
+The word cloud is not quite conclusive. Larger the size of the words means higher the occurrence of the word. Most of the words of a larger size are neutral in nature. The remaining words that are of a smaller size are either neutral as well as of negative sentiment. Thus, deciphering the overall sentiment of Nespresso Metrotown's service quality is not very conclusive using the word cloud.
+
+### VADER Sentiment Scoring
+
+In VADER sentiment scoreing, the compound score range is from -1 to +1. Closer the compound score is to +1, more positive the written review. Closer the compound score is to -1, more negative the written review. Also, close the compound score is to 0, more neutral the written review. This method is also able to provide a score for positivity, negativity, and neutrality.
+
+#### Fig 10. Compound Score by Stars Given
+![Fig 10. Compound Score by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/2.png?raw=true)
+
+The bar chart indicates a left-skewed distribution regarding the compound score. The chart indicates a higher variation of negative to positive reviews with 1-star & 2-star rating. The latter star ratings indicate lower variation of slightly positive to very positive reviews. The compound score is higher for the higher star ratings, which is testament to a consistent service standard. Further testament to the consistent service standard is that none of the star ratings have a compound score of less than 0.
+
+#### Fig 11. Compound Score by Sentiment Classification
+![Fig 11. Compound Score by Sentiment Classification](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/3.png?raw=true)
+
+|Sentiment|Analysis|
+|--|--|
+|Negative|The chart is representative of a right-skewed distribution. Therefore, lower the star rating, the higher the negative score. This makes sense as the likelihood of a high negative score for a 3 to 5 star rating is unlikely. This is indicative of a consistent service standard.|
+|Neutral|The chart is representative of a normal distribution. This indicates that there are written reviews with a variable star ratings but with a neutral review. This could be due to a lot of reviewers providing star ratings without a written review or a written review that is contains words that are inconclusive of sentiment.|
+|Positive|The chart does not have a conclusive distribution. It is confusing how the positive score for 1-star rating exceeds that of 2-star rating. However, the positive score whilst moving to the latter star ratings shows a sharp increase. This is indicative of a somewhat consistent service standard, despite a contrast when it comes to the positive score for the 1-star rating.|
+
+#### Fig 12. Sentiment Score over the years by Sentiment Classification
+![Fig 12. Sentiment Score over the years by Sentiment Classification](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/4.png?raw=true)
+
+The compound score has fluctuated over the years but has remained less than 0.5, which infers that overall the reviews have not been very positive but moderately positive. Although, the moderate level of positive reviews have been consistent over the years. There was an slight decrease in 2020 with a slight uptick in 2021. As of 2022, there is a decrease in compound score that is slightly higher than that of 2020.
+
+|Sentiment|Analysis|
+|--|--|
+|Negative|There has been a slight uptick in negative score since 2020, which infers that there has been occurrences of negative customer service experiences.|
+|Neutral|The neutral score has been very high over the years but has experienced a decrease in 2022. This could infer that the reviews received are due to impactful customer service experience irregardless if it is positive or negative.|
+|Positive|The positive score has fluctuated over the years with a slight uptick in 2022, which almost matches 2020.|
+
+#### Fig 13. Compound Score by Reviewer Title
+![Fig 13. Compound Score by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/5.png?raw=true)
 
 
 
