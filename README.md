@@ -190,14 +190,26 @@ The bar chart suggests that reviewers with "Local Guide" status on Google Review
 
 ### Textblob Sentiment Scoring
 
+In textblob sentiment scoring, there are two key components; polarity and subjectivity. Polarity functions similarly to the compound score in VADER sentiment scoring; it ranges from -1 to +1. Closer the polarity score is to +1, the more positive the written review is. Conversely, the closer the polarity score is to -1, the more negative the written review is. Subjectivity ranges from 0 to 1. The closer the subjectivity score is to 1, the more subjective the written review is. Conversely, the closer subjectivity score is to 0, the more objective the written review is.
 
+#### Fig 15. Polarity & Subjectivity by Star Rating
+![Fig 15. Polarity & Subjectivity by Star Rating](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/7.png?raw=true)
 
+The polarity bar chart shows an understandable trend. The polarity score for 1-star and 2-star rating is below 0. In turn, all latter star ratings have a polarity score greater than 0. This suggests that reviewers that provide a 1-star and 2-star rating had a negative experience at Nespresso Metrotown based on the written reviews. Furthermore, reviewers that provided a 3-star to 5-star rating had a positive experience at Nespresso Metrotown based on the written reviews.
 
+The subjectivty bar chart indicates that the reviews where there is a 1-star and 2-star rating are more objective compared to latter star ratings. This is because the subjectivity scores for 1-star and 2-star rating are highest. Ironically, the reviews that had an accompanying 3-star rating has the lowest subjectivity score, meaning that the respective reviews are most objective compared to the reviews of that of other star ratings.
 
+#### Fig 16. Polarity & Subjectivity by Reviewer Title
+![](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/8.png?raw=true)
 
+In the polarity bar chart, it is clear that reviewers with "Local Guide" status have a higher polarity score than that without "Local Guide" status. Thus, there has been a higher likelihood that reviewers with "Local Guide" status had a more positive experience at Nespressp Metrotown.
 
+The subjectivty bar chart suggests that the subjectivity score for 'No Title' and 'Local Guide' reviewer titles is almost the same. This could infer that the level of subjectivity in the written reviews for both reviewers with and without "Local Guide" status is comparable.
 
+#### Fig 17. Polarity & Subjectivity over the years
+![Fig 17. Polarity & Subjectivity over the years](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/9.png?raw=true)
 
+Interestingly there has been an uptick in 2020 in regards to polarity score, but steady dip whilst moving toward 2022. Thus, overall positive sentiment of Nespresso Metrotwon's service quality has decreased. On the other hand, subjectivity score increased by a lot moving towards 2022. This could suggest that Nespresso Metrotown's service quality has been leaving an impression on the reviewers.
 
 
 
