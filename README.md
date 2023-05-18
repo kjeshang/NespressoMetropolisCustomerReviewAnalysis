@@ -211,7 +211,7 @@ The subjectivty bar chart suggests that the subjectivity score for 'No Title' an
 
 Interestingly there has been an uptick in 2020 in regards to polarity score, but steady dip whilst moving toward 2022. Thus, overall positive sentiment of Nespresso Metrotwon's service quality has decreased. On the other hand, subjectivity score increased by a lot moving towards 2022. This could suggest that Nespresso Metrotown's service quality has been leaving an impression on the reviewers.
 
-
+### Emotion Classification using Lexicon based method
 
 
 
