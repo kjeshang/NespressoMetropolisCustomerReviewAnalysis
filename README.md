@@ -213,6 +213,24 @@ Interestingly there has been an uptick in 2020 in regards to polarity score, but
 
 ### Emotion Classification using Lexicon based method
 
+In the Lexicon based method of emotion classification, 10 emotions can be determined. These 10 emotions include: positive, trust, anticipation, joy, negative, sadness, surprise, anger, fear, and disgust. These emotions are determined based on the words used in a written review, although it is prevelant that a given review can reflect more than one emotional sentiment. To maintain simplicity, the Emotion Count and Emotion Frequency will be considered in this part of the sentiment analysis exploration.
+
+#### Fig 18. Overall Emotion Classification Count
+
+![Fig 18. Overall Emotion Classification Count](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/10.png?raw=true)
+
+The bar chart indicates that customers that provided written reviews had more of a positive sentiment in regard to their overall experience at Nespresso Metrotown. This is also the case in regard to the other emotions related to positivity such as trust, anticipation, and joy. This is supported by the fact that the negative emotion along with all other related emotions have a lower emotion count than the aforementioned positive emotions.
+
+#### Fig 19. Emotion Classification Count over the years
+
+![Fig 19. Emotion Classification Count over the years](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/11.png?raw=true)
+
+
+
+
+
+
+
 
 
 
