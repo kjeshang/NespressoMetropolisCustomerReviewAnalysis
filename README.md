@@ -138,6 +138,10 @@ Post-completion of NLP pre-processing, sentiment analysis is performed. There ar
 3. **Textblob Sentiment Scoring:** This method functions similarly to VADER method, but determines a numerical score for the subjectivity and polarity of the written review. Therefore, the level of objectivity & validity (or lackthereof) can be understood using this method.
 4. **Emotion Classification using Lexicon based method:** This method is able to provide numerical scores to a collection ten emotions of varying levels of positivity & negativity based on the reviews.
 
+After performing a sentiment analysis exploration using the above four methods, at least three new datasets are created using the cleaned reviews dataset to reflect the sentiment analysis results for each method. Then the newly created datasets are exported as CSV files to be used in the next stage of the project.
+
+In the forthcoming sub-sections, the visualizations derived from each sentiment analysis method are shown, along with brief intepretations of the visualizations and analysis.
+
 ### Word Cloud
 
 #### Fig 9. Word Cloud
@@ -273,16 +277,30 @@ As there are 10 emotions, the Emotion Count by reviewer title has been interpret
 
 ![Fig 21-1. Emotion Classification Count by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/15.png?raw=true)
 
-In the bar chart, it can be seen that most reviewers that gave both 1-star and 5-star rating experienced a high influx of various emotions. Although, the positive emotion and some related emotions have a relatively high count for 1-star rating compared to that of 5-star rating.
+In the bar chart, it can be seen that most reviewers that gave both 1-star and 5-star rating experienced a high influx of various emotions. Although, the positive emotion and some related emotions have a relatively high count for 1-star rating compared to that of 5-star rating. In a way, this does not make sense unless the Lexicon based method interpreted a word to reflect one emotion but the written review in its entirely, as well as in terms of other words, reflects a different emotion or set of emotions.
 
 ![Fig 21-2. Emotion Classification Count by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/16.png?raw=true)
 
+|Emotion|Analysis|
+|--|--|
+|Fear|Reviewers that gave 1-star rating experienced the most emotions of fear, compared to those that gave other star ratings.|
+|Anger|Reviewers that gave 1-star rating experienced the most emotions of anger, compared to those that gave other star ratings.|
+|Anticipation|Reviewers that gave 1-star and 5-star rating experienced the most emotions of anticipation, compared to those that gave other star ratings.|
+|Trust|Majority of reviewers that gave 5-star rating experienced the most emotions of trust, compared to those that gave other star ratings. Also, reviewers that gave 1-star ratings experienced relatively high emotions of trust as well.|
+|Surprise|Reviewers that gave 1-star and 5-star rating experienced the most emotions of surprise, compared to those that gave other star ratings.|
+|Positive|Reviewers that gave 1-star and 5-star rating experienced the most positive emotions, compared to those that gave other star ratings.|
+|Negative|Reviewers that gave 1-star rating experienced the most negative emotions, compared to those that gave other star ratings.|
+|Sadness|Reviewers that gave 1-star rating experienced the most emotions of sadness, compared to those that gave other star ratings.|
+|Disgust|Reviewers that gave 1-star rating experienced the most emotions of disgust, compared to those that gave other star ratings.|
+|Joy|Reviewers that gave 5-star rating experienced the most emotions of joy, compared to those that gave other star ratings.|
 
+#### Fig 22. Average Emotion Classification Frequency
 
+![Fig 22. Average Emotion Classification Frequency](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/17.png?raw=true)
 
+This bar chart emulates the bar chart in figure 18, although the emotions are measured in terms of a classification frequency that is normalized. This helps to better determine the proportion of each emotion experienced throughout all written reviews. To reiterate, a higher proportion of the reviews reflect the positive emotion, along with related emotions such as trust, anticipation, and joy. Although, a smaller proportion of reviews reflect the emotion of surprise. A sizeable proportion of reviews reflect the negative emotion, although a lower proportion of reviews reflect the related emotions such as sadness, anger, fear, and disgust.
 
-
-
+## Sentiment Analysis - Predictive Modeling
 
 
 
