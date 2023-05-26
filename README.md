@@ -223,10 +223,26 @@ The bar chart indicates that customers that provided written reviews had more of
 
 #### Fig 19. Emotion Classification Count over the years
 
-![Fig 19. Emotion Classification Count over the years](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/11.png?raw=true)
+As there are 10 emotions, the Emotion Count over the years has been interpreted in two visualizations. The first chart considers all emotions experienced over the years in a single line chart. The second chart shows the count of each emotions over the years in each individual chart.
 
+![Fig 19-1. Emotion Classification Count over the years](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/11.png?raw=true)
 
+According to the chart above, customers have generally been experiencing the positive, surprise, anticipation, joy, trust, and negative, compared to others. It is a good sign, but there has been an uptick in the negative emotion along with other related emotions. It can be seen that the emotion count for 2021 is lower across all emotions due to limited service hours due to the Covid-19 pandemic.
 
+![Fig 19-2. Emotion Classification Count over the years](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/12.png?raw=true)
+
+|Emotion|Analysis|
+|--|--|
+|Fear|Fluctuation of fear in earlier years, and then a sharp increase in 2022.|
+|Anger|Fluctuation of anger ine earlier years, but then a sharp increase in 2022.|
+|Anticipation|A somewhat sharp decline of anticipation leading up to 2021, and then a sharp increase in 2022.|
+|Trust|Fluctuation of trust in earlier years, and then a sharp increase in 2022.|
+|Surprise|A somewhat steady decline of surprise leading up to 2021, and then a sharp increase in 2022.|
+|Positive|A steady decline of positive emotion leading up to 2021, and then a sharp increase in 2022.|
+|Negative|Slight fluctuation of negative emotion leading up to 2021, and then a sharp increase in 2022.|
+|Sadness|Slight fluctuation of sadness leading up to 2021, and then a sharp increase in 2022.|
+|Disgust|Slight fluctuation of disgust leading up to 2021, and then a sharp increase in 2022.|
+|Joy|Fluctuation of joy in earlier years, and then a sharp increase in 2022.|
 
 
 
