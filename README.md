@@ -302,7 +302,12 @@ This bar chart emulates the bar chart in figure 18, although the emotions are me
 
 ## Sentiment Analysis - Predictive Modeling
 
+The intent of this part of the project is to essentially perform a classification experiment to determine which sentiment analysis method can be used as a basis to predict polarity of written reviews. In addition, utilize the textblob dataset to determine whether a written review is objective or subjective. In a real world context, this part of the project attempts to address what predictive models could be used by Nespresso Canada to instantenously retrieve a predicted sentiment from a written Google Review.
 
+Below are the steps taken in this section of the project.
+1. Import necessary Python packages, as well as datasets created from the previous steps that apply each of the sentiment analysis methods are imported.
+2. Construct a function that delivers an accuracy score using a pipeline based on the prespecified dataset reflecting a sentiment analysis method, vectorization method, features (i.e., cleaned reviews column), target (i.e., prediction result), proportion of training & test set, random state, and the actual classification model that is used to make a prediction. 
+3. Using similar parameters to the previous step, construct a function that delivers the accuracy score along with the 
 
 
 
