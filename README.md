@@ -244,6 +244,44 @@ According to the chart above, customers have generally been experiencing the pos
 |Disgust|Slight fluctuation of disgust leading up to 2021, and then a sharp increase in 2022.|
 |Joy|Fluctuation of joy in earlier years, and then a sharp increase in 2022.|
 
+#### Fig 20. Emotion Classification Count by Reviewer Title
+
+As there are 10 emotions, the Emotion Count by reviewer title has been interpreted in two visualizations. The first chart considers all emotions experienced by reviewer title in a single line chart. The second chart shows the count of each emotions by reviewer title in each individual chart.
+
+![Fig 20-1. Emotion Classification Count by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/13.png?raw=true)
+
+Based on the bar chart, it can be seen that reviewers with "Local Guide" status have a much higher emotion count for the positive emotion along with other related emotions such as anticipation, trust, and joy. All other emotions have comparable emotion counts across reviewer title.
+
+![Fig 20-2. Emotion Classification Count by Reviewer Title](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/14.png?raw=true)
+
+|Emotion|Analysis|
+|--|--|
+|Fear|Reviewers with no title have experienced emotions of fear slightly more than reviewers with "Local Guide" status.|
+|Anger|Reviewers with "Local Guide" status have experienced emotions of anger at a near identical level to that of reviewers with no title.|
+|Anticipation|Reviewers with "Local Guide" status have experienced emotions of anticipation more than reviewers with no title.|
+|Trust|Reviewers with "Local Guide" status have experienced emotions of trust more than reviewers with no title.|
+|Surprise|Reviewers with "Local Guide" status have experienced emotions of surprise more than reviewers with no title.|
+|Positive|Reviewers with "Local Guide" status have experienced positive emotions more than reviewers with no title.|
+|Negative|Reviewers with "Local Guide" status have experienced slightly less negative emotions than reviewers with no title.|
+|Sadness|Reviewers with "Local Guide" status have experienced less emotions of sadness than reviewers with no title.|
+|Disgust|Reviewers with "Local Guide" status have experienced slightly more emotions of disgust than reviewers with no title.|
+|Joy|Reviewers with "Local Guide" status have experienced much more emotions of joy than reviewers with no title.|
+
+#### Fig 21. Emotion Classification Count by Stars Given
+
+As there are 10 emotions, the Emotion Count by reviewer title has been interpreted in two visualizations. The first chart considers all emotions experienced by stars given in a single line chart. The second chart shows the count of each emotions by stars given in each individual chart.
+
+![Fig 21-1. Emotion Classification Count by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/15.png?raw=true)
+
+In the bar chart, it can be seen that most reviewers that gave both 1-star and 5-star rating experienced a high influx of various emotions. Although, the positive emotion and some related emotions have a relatively high count for 1-star rating compared to that of 5-star rating.
+
+![Fig 21-2. Emotion Classification Count by Stars Given](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/3_SentimentAnalysis_Exploration/16.png?raw=true)
+
+
+
+
+
+
 
 
 
