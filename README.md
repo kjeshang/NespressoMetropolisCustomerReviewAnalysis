@@ -355,6 +355,77 @@ Below are the steps taken in this section of the project.
 6. Conduct an experiment to predict the polarity classification and determine the accuracy score with each combination of sentiment analysis dataset, vectorization method, and classification model. Output the results of the experiment in a Pandas dataframe, and then reorder results in descrnding order of accuracy score.
 7. Using the combination of sentiment analysis dataset, vectorization method, and classification model that yielded the highest accuracy score, output the accuracy score (again) along with the classification report and confusion matrix.
 
+In the forthcoming sub-sections, the results from the experiment are shown and interpreted.
+
+#### Fig 23. Polarity Experiment Accuracy Scores
+
+|Sentiment Analysis Method|Vectorization Method|Classification Method|Pipe Score|
+|--|--|--|--|
+|Emotion Lexicon|Bag-of-Words|Decision Tree|0.915888|
+|Textblob|Bag-of-Words|Decision Tree|0.915888|
+|Textblob|TF-IDF|Decision Tree|0.906542|
+|Emotion Lexicon|TF-IDF|Decision Tree|0.906542|
+|Emotion Lexicon|Bag-of-Words|Multinomial Naive Bayes|0.906542|
+|Textblob|Bag-of-Words|Logistic Regression|0.906542|
+|Textblob|Bag-of-Words|Multinomial Naive Bayes|0.906542|
+|Emotion Lexicon|Bag-of-Words|Logistic Regression|0.906542|
+|Vaders|Bag-of-Words|Multinomial Naive Bayes|0.887850|
+|Emotion Lexicon|TF-IDF|Multinomial Naive Bayes|0.869159|
+|Textblob|TF-IDF|Multinomial Naive Bayes|0.869159|
+|Vaders|Bag-of-Words|Support Vector Machine|0.859813|
+|Textblob|TF-IDF|Logistic Regression|0.859813|
+|Emotion Lexicon|TF-IDF|Logistic Regression|0.859813|
+|Textblob|Bag-of-Words|Support Vector Machine|0.850467|
+|Vaders|TF-IDF|Logistic Regression|0.850467|
+|Vaders|TF-IDF|Support Vector Machine|0.850467|
+|Emotion Lexicon|Bag-of-Words|Support Vector Machine|0.850467|
+|Textblob|TF-IDF|Support Vector Machine|0.841121|
+|Vaders|Bag-of-Words|Logistic Regression|0.841121|
+|Emotion Lexicon|TF-IDF|Support Vector Machine|0.841121|
+|Vaders|TF-IDF|Decision Tree|0.831776|
+|Vaders|TF-IDF|Multinomial Naive Bayes|0.831776|
+|Vaders|Bag-of-Words|Decision Tree|0.803738|
+
+#### Fig 24. Polarity Experiment Result 1
+
+> Accuracy Score = 0.6915887850467289
+
+||Precision|Recall|F1-Score|Support|
+|--|--|--|--|--|
+|Negative|0.50|0.47|0.49|19|
+|Neutral|0.74|0.83|0.78|41|
+|Positive|0.72|0.66|0.69|47|
+||||||
+|Accuracy|||0.69|107|
+|Macro Average|0.65|0.65|0.65|107|
+|Weighted Average|0.69|0.69|0.69|107|
+
+![Fig 24. Polarity Experiment Result 1 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/1.png?raw=true)
+
+#### Fig 25. Polarity Experiment 2
+
+> Accuracy Score = 0.9158878504672897
+
+||Precision|Recall|F1-Score|Support|
+|--|--|--|--|--|
+|Negative|0.83|0.83|0.83|18|
+|Neutral|0.93|0.90|0.92|31|
+|Positive|0.93|0.95|0.94|58|
+||||||
+|Accuracy|||0.92|107|
+|Macro Average|0.90|0.89|0.90|107|
+|Weighted Average|0.92|0.92|0.92|107|
+
+![Fig 25. Polarity Experiment Result 2 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/2.png?raw=true)
+
+### Experiment - Constructive & Subjective Review
+
+
+
+
+
+
+
 
 
 
