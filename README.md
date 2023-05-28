@@ -420,9 +420,34 @@ In the forthcoming sub-sections, the results from the experiment are shown and i
 
 ### Experiment - Constructive & Subjective Review
 
+#### Fig 26. Subjectivity Experiment Accuracy Scores
 
+|Vectorization Method|Classification Model|Pipe Score|
+|--|--|--|
+|TF-IDF|Multinomial Naive Bayes|0.803738|
+|TF-IDF|Logistic Regression|0.757009|
+|Bag-of-Words|Multinomial Naive Bayes|0.747664|
+|Bag-of-Words|Decision Tree|0.738318|
+|Bag-of-Words|Logistic Regression|0.710280|
+|TF-IDF|Support Vector Machine|0.682243|
+|TF-IDF|Decision Tree|0.644860|
+|Bag-of-Words|Support Vector Machine|0.626168|
 
+#### Fig 27. Subjectivity Experiment Result
 
+> Accuracy Score = 0.8037383177570093
+
+||Precision|Recall|F1-Score|Support|
+|--|--|--|--|--|
+|Constructive|1.00|0.16|0.27|19|
+|Inconclusive|1.00|0.86|0.92|35|
+|Subjective|0.72|1.00|0.83|53|
+||||||
+|Accuracy|||0.80|107|
+|Macro Average|0.91|0.67|0.68|107|
+|Weighted Average|0.86|0.80|0.76|107|
+
+![Fig 25. Subjectivity Experiment Result - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/3.png?raw=true)
 
 
 
