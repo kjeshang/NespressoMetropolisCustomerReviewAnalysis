@@ -302,12 +302,60 @@ This bar chart emulates the bar chart in figure 18, although the emotions are me
 
 ## Sentiment Analysis - Predictive Modeling
 
-The intent of this part of the project is to essentially perform a classification experiment to determine which sentiment analysis method can be used as a basis to predict polarity of written reviews. In addition, utilize the textblob dataset to determine whether a written review is objective or subjective. In a real world context, this part of the project attempts to address what predictive models could be used by Nespresso Canada to instantenously retrieve a predicted sentiment from a written Google Review.
+The intent of this part of the project is to essentially perform a classification experiment to determine which sentiment analysis method can be used as a basis to predict polarity of written reviews. In addition, utilize the textblob dataset to determine whether a written review is objective or subjective. In a real world context, this part of the project attempts to address what predictive models could be used by Nespresso Canada to instantenously retrieve a predicted sentiment from a written Google Review. 
+
+Vectorization methods are necessary to convert the words in the **_Review Cleaned_** column into numerical values to be utilized in a pipeline prior to applying a classification model. Two types of vectorization methods were used:
+1. _Term Frequency Inverse Frequency (TF-IDF)_: This method takes into consideration both the frequency and importance of a words in a written review.
+2. _Bag of Words_: This method takes into consideration only the frequency of words in a written review.
+
+After the words in the **_Review Cleaned_** column are vectorized, the features would be prepared to use in the classification model. Below are the four types of classification models that were used:
+1. _Logisitic Regression_
+2. _Multinomial Naive Bayes_
+3. _Decision Tree_
+4. _Support Vector Machine_
+
+### Experiment - Positive, Negative, Neutral
 
 Below are the steps taken in this section of the project.
-1. Import necessary Python packages, as well as datasets created from the previous steps that apply each of the sentiment analysis methods are imported.
+1. Import necessary Python packages to be used for sentiment analysis predictive modeling.
 2. Construct a function that delivers an accuracy score using a pipeline based on the prespecified dataset reflecting a sentiment analysis method, vectorization method, features (i.e., cleaned reviews column), target (i.e., prediction result), proportion of training & test set, random state, and the actual classification model that is used to make a prediction. 
-3. Using similar parameters to the previous step, construct a function that delivers the accuracy score along with the 
+3. Using similar parameters to the previous step, construct a function that delivers the accuracy score along with the a classification report and a confusion matrix.
+4. Import the datasets that reflect each of the sentiment analysis methods as Pandas dataframes. Take a peek at the data, and show an informative summary of each dataset.
+5. Perform manual classification for each dataset to determine the actual target for polarity.
+    * Manual classification for polarity using vaders dataset.
+        |Determinant|Classification|
+        |--|--|
+        |Compound Score == 0|Neutral|
+        |Compound Score > 0|Positive|
+        |Compound Score < 0|Negative|
+
+    * Manual calssification for polarity using textblob dataset.
+        |Determinant|Classification|
+        |--|--|
+        |Polarity Score == 0|Neutral|
+        |Polarity Score > 0|Positive|
+        |Polarity Score < 0|Negative|
+    
+    * Manual classification for polarity using lexicon (emotion count) dataset.
+    
+        Since this sentiment analysis method involves ten emotions, the emotions are binned into categories that align with the polarty classification levels of positive, negative, and neutral.
+        
+        |Emotions|Emotion Bin|
+        |--|--|
+        |Trust, Surprise, Positive, Joy|Positive|
+        |Fear, Anger, Anticipation, Negative, Sadness, Disgust|Negative|
+        
+        The emotion counts are accumulated for each emotion bin to determine a positive score and negative score. If the positive score and negative score is 0 or equal, then the classification is neutral.
+        
+        |Determinant|Classification|
+        |--|--|
+        |Positive Score == Negative Score|Neutral|
+        |Positive Score > Negative Score|Positive|
+        |Negative Score < Positive Score|Negative|
+6. Conduct an experiment to predict the polarity classification and determine the accuracy score with each combination of sentiment analysis dataset, vectorization method, and classification model. Output the results of the experiment in a Pandas dataframe, and then reorder results in descrnding order of accuracy score.
+7. Using the combination of sentiment analysis dataset, vectorization method, and classification model that yielded the highest accuracy score, output the accuracy score (again) along with the classification report and confusion matrix.
+
+
 
 
 
