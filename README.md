@@ -479,7 +479,26 @@ _Confusion Matrix:_
 
 ### Experiment - Constructive & Subjective Review
 
+Below are the steps taken in this section of the project.
+
+1. Import necessary Python packages to be used for sentiment analysis predictive modeling.
+2. Construct a function that delivers an accuracy score using a pipeline based on the prespecified dataset reflecting a sentiment analysis method, vectorization method, features (i.e., cleaned reviews column), target (i.e., prediction result), proportion of training & test set, random state, and the actual classification model that is used to make a prediction. 
+3. Using similar parameters to the previous step, construct a function that delivers the accuracy score along with the a classification report and a confusion matrix.
+4. Import the datasets that reflect each of the sentiment analysis methods as Pandas dataframes. Take a peek at the data, and show an informative summary of each dataset.
+5. Perform manual classification using the textblob dataset to determine the actual target for subjectivity.
+    |Determinant|Classification|
+    |--|--|
+    |Polarity Score == 0|Inconclusive|
+    |Polarity Score != 0 **&** Subjectivity Score < 0.5|Constructive|
+    |Polarity Score != 0 **&** Subjectivity Score > 0.5|Subjective|
+6. Conduct an experiment to predict the subjectivity classification and determine the accuracy score with each combination of vectorization method and classification model. Output the results of the experiment in a Pandas dataframe, and then reorder results in descending order of accuracy score.
+7. Using the combination of the vectorization method and classification model that yielded the highest accuracy score, output the accuracy score (again) along with the classification report and confusion matrix.
+
+In the forthcoming sub-sections, the results from the experiment are shown and interpreted.
+
 #### Fig 26. Subjectivity Experiment Accuracy Scores
+
+Below are the prediction accuracy scores for each combination of vectorization method and classification model ordered by most accurate (i.e., descending order of accuracy score). The results in the following table helped to determine which combination of vectorization method and classification method is the most accurate to be used for further prediction
 
 |Vectorization Method|Classification Model|Pipe Score|
 |--|--|--|
@@ -494,7 +513,17 @@ _Confusion Matrix:_
 
 #### Fig 27. Subjectivity Experiment Result
 
+The following combination of the textblob dataset, vectorization method, and classification model yielded the highest prediction accuracy score. Based on the results of the experiment, the following predictive model could be reasonable for further business use. Although, whilst reading the classification report closely, the results do not make sense in terms of precision, recall, support, and F1-Score.
+
+|Vectorization Method|Classification Model|
+|--|--|
+|TF-IDF|Multinomial Naive Bayes|
+
 > Accuracy Score = **0.8037383177570093**
+
+The accuracy score is around 0.80, which is indicative of a reasonable level of accuracy.
+
+_Classification Report_:
 
 ||Precision|Recall|F1-Score|Support|
 |--|--|--|--|--|
@@ -505,6 +534,25 @@ _Confusion Matrix:_
 |Accuracy|||0.80|107|
 |Macro Average|0.91|0.67|0.68|107|
 |Weighted Average|0.86|0.80|0.76|107|
+
+* Precision
+    * Out of all of the written reviews that the model predicted to be constructive, 100% of the written reviews are actually constructive.
+    * Out of all of the written reviews that the model predicted to be inconclusive, 100% of the written reviews are actually inconclusive.
+    * Out of all of the written reviews that the model predicted to be subjective, only 72% of the written reviews are actually subjective.
+* Recall
+    *  Out of all the written reviews that were constructive, the model only predicted this subjectivity level correctly for 16% of the written reviews.
+    *  Out of all of the written reviews that were inconclusive, the model only predicted this subjectivity level correctly for 86% of the reviews.
+    *  Out of all of the written reviews that were subjective, the model only predicted this subjectivity level correctly for 100% of the reviews.
+* F1-Score
+    * As the F1-Score is only 27% for the constructive subjectivity level, the model is not accurate at all when predicting written reviews that are actually constructive.
+    * As the F1-Score is only 92% for the inconclusive subjectivity level, the model is not accurate at all when predicting written reviews that are actually inconclusive.
+    * As the F1-Score is only 83% for the subjective subjectivity level, the model is not accurate at all when predicting written reviews that are actually subjective.
+* Support
+    * Out of 107 written reviews in the test set, 19 of the written reviews were determined to be constructive as per the model.
+    * Out of 107 written reviews in the test set, 35 of the written reviews were determined to be inconclusive as per the model.
+    * Out of 107 written reviews in the test set, 53 of the written reviews were determined to be subjective as per the model.
+
+_Confusion Matrix_:
 
 ![Fig 25. Subjectivity Experiment Result - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/3.png?raw=true)
 
