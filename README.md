@@ -556,7 +556,11 @@ _Confusion Matrix_:
 
 ![Fig 25. Subjectivity Experiment Result - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/3.png?raw=true)
 
+## Conclusion
 
+### Project Insights
+
+### Recommendations
 
 
 
