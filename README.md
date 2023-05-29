@@ -401,6 +401,7 @@ The following combination of sentiment analysis dataset, vectorization method, a
 The accuracy score above indicates that the sentiment analysis method, vectorization method, and classification model does not yield a highly accurate prediction for polarity. Typically, predictive model with an accuracy score greater than 0.80 would typically reflect a high degree of accuracy.
 
 _Classification Report_:
+
 ||Precision|Recall|F1-Score|Support|
 |--|--|--|--|--|
 |Negative|0.50|0.47|0.49|19|
@@ -429,6 +430,7 @@ _Classification Report_:
     * Out of 107 written reviews in the test set, 47 of the written reviews were determined to be positive as per the model.
 
 _Confusion Matrix_:
+
 ![Fig 24. Polarity Experiment Result 1 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/1.png?raw=true)
 
 #### Fig 25. Polarity Experiment Result 2
@@ -472,6 +474,7 @@ _Classification Report:_
     * Out of 107 written reviews in the test set, 58 of the written reviews were determined to be postive as per the model.
 
 _Confusion Matrix:_
+
 ![Fig 25. Polarity Experiment Result 2 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/2.png?raw=true)
 
 ### Experiment - Constructive & Subjective Review
