@@ -359,7 +359,9 @@ In the forthcoming sub-sections, the results from the experiment are shown and i
 
 #### Fig 23. Polarity Experiment Accuracy Scores
 
-|Sentiment Analysis Method|Vectorization Method|Classification Method|Pipe Score|
+Below are the prediction accuracy scores for each combination of sentiment analysis method, vectorization method, and classification model ordered by most accurate (i.e., descending order of accuracy score). The results in the following table helped to determine which combination of sentiment analysis method (dataset), vectorization method is the most accurate to be used for further prediction.
+
+|Sentiment Analysis Method|Vectorization Method|Classification Model|Pipe Score|
 |--|--|--|--|
 |Emotion Lexicon|Bag-of-Words|Decision Tree|0.915888|
 |Textblob|Bag-of-Words|Decision Tree|0.915888|
@@ -388,8 +390,17 @@ In the forthcoming sub-sections, the results from the experiment are shown and i
 
 #### Fig 24. Polarity Experiment Result 1
 
-> Accuracy Score = 0.6915887850467289
+The following combination of sentiment analysis dataset, vectorization method, and classification model yielded one of the highest prediction accuracy scores. Although, when performing the predictive modeling again and outputing the classification results, the accuracy score was less compared to performing the initial experiment. This is strange despite maintaining the same training-to-test set ratio and random state. This could infer that the emotion lexicon sentiment analysis method may be lacking in terms of valid classification, or the manual classification utilized to determine an actual target polarity for the written review was not a valid approach.
 
+|Sentiment Analysis Method|Vectorization Method|Classification Model|
+|--|--|--|
+|Emotion Lexicon|Bag-of-Words|Decision Tree|
+
+> Accuracy Score = **0.6915887850467289**
+
+The accuracy score above indicates that the sentiment analysis method, vectorization method, and classification model does not yield a highly accurate prediction for polarity. Typically, predictive model with an accuracy score greater than 0.80 would typically reflect a high degree of accuracy.
+
+_Classification Report_:
 ||Precision|Recall|F1-Score|Support|
 |--|--|--|--|--|
 |Negative|0.50|0.47|0.49|19|
@@ -400,12 +411,39 @@ In the forthcoming sub-sections, the results from the experiment are shown and i
 |Macro Average|0.65|0.65|0.65|107|
 |Weighted Average|0.69|0.69|0.69|107|
 
+* Precision
+    * Out of all of the written reviews that the model predicted to be negative, only 50% were actually negative.
+    * Out of all of the written reviews that the model predicted to be neutral, only 74% were actually neutral.
+    * Out of all of the written reviews that the model predicted to be positive, only 72% were actually postive.
+* Recall
+    * Out of all of the written reviews that actually were negative, the model only predicted this polarity level correctly for 46% of the written reviews.
+    * Out of all of the written reviews that actually were neutral, the model only predicted this polarity level correctly for 83% of the written reviews.
+    * Out of all of the written reviews that actually were positive, the model only predicted this polarity level correctly for 66% of the written reviews.
+* F1-Score
+    * As the F1-Score is only 49% for the negative polarity level, the model is not very accurate when correctly predicting written reviews that are actually negative.
+    * As the F1-Score is 78% for the neutral polarity level, the model is somewhat accurate when correctly predicting written reviews that are actually neutral.
+    * As the F1-Score is 69% for the positive polarity level, the model is somewhat accurate when correctly predicting written reviews that are actually positive.
+* Support
+    * Out of 107 written reviews in the test set, 19 of the written reviews were determined to be negative as per the model.
+    * Out of 107 written reviews in the test set, 41 of the written reviews were determined to be neutral as per the model.
+    * Out of 107 written reviews in the test set, 47 of the written reviews were determined to be positive as per the model.
+
+_Confusion Matrix_:
 ![Fig 24. Polarity Experiment Result 1 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/1.png?raw=true)
 
-#### Fig 25. Polarity Experiment 2
+#### Fig 25. Polarity Experiment Result 2
 
-> Accuracy Score = 0.9158878504672897
+The following combination of sentiment analysis dataset, vectorization method, and classification model yielded one of the highest prediction accuracy scores. Unlike the previous polarity experiment result, the classification prediction was performed again and yieled exactly the same accuracy score as in Figure 24. In short, the results makes sense. In turn, this would be the predictive model that could potentially be used for further business use case.
 
+|Sentiment Analysis Method|Vectorization Method|Classification Model|
+|--|--|--|
+|Textblob|Bag-of-Words|Decision Tree|
+
+> Accuracy Score = **0.9158878504672897**
+
+The accuracy score above indicates that the sentiment analysis method, vectorization method, and classification model yields a highly accurate prediction for polarity. The accuracy score is above 0.80, which is an indicator for validity.
+
+_Classification Report:_
 ||Precision|Recall|F1-Score|Support|
 |--|--|--|--|--|
 |Negative|0.83|0.83|0.83|18|
@@ -416,6 +454,16 @@ In the forthcoming sub-sections, the results from the experiment are shown and i
 |Macro Average|0.90|0.89|0.90|107|
 |Weighted Average|0.92|0.92|0.92|107|
 
+* Precision
+    * Out of all of the written reviews that were predicted to be negative, only 83% of the written reviews are actually negative.
+    * Out of all of the written reviews that were predicted to be neutral, only 93% of the written reviews are actually neutral.
+    * Out of all of the written reviews that were predicted to be positive, only 93% of the written reviews are actually positive.
+* Recall
+    *  
+* F1-Score
+* Support
+
+_Confusion Matrix:_
 ![Fig 25. Polarity Experiment Result 2 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/2.png?raw=true)
 
 ### Experiment - Constructive & Subjective Review
