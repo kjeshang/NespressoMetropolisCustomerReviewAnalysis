@@ -459,9 +459,17 @@ _Classification Report:_
     * Out of all of the written reviews that were predicted to be neutral, only 93% of the written reviews are actually neutral.
     * Out of all of the written reviews that were predicted to be positive, only 93% of the written reviews are actually positive.
 * Recall
-    *  
+    * Out of all of the written reviews that actually were negative, the model only predicted this polarity level correctly for 83% of the written reviews.
+    * Out of all of the written reviews that actually were neutral, the model only predicted this polarity level correctly for 92% of the written reviews.
+    * Out of all of the written reviews that actually were positive, the model only predicted this polarity level correctly for 94% of the written reviews.
 * F1-Score
+    * As the F1-Score is only 83% for the negative polarity level, the model is quite accurate when correctly predicting written reviews that are actually negative.
+    * As the F1-Score is only 92% for the negative polarity level, the model is very accurate when correctly predicting written reviews that are actually neutral.
+    * As the F1-Score is only 94% for the negative polarity level, the model is not very accurate when correctly predicting written reviews that are actually positive.
 * Support
+    * Out of 107 written reviews in the test set, 18 of the written reviews were determined to be negative as per the model.
+    * Out of 107 written reviews in the test set, 31 of the written reviews were determined to be neutral as per the model.
+    * Out of 107 written reviews in the test set, 58 of the written reviews were determined to be postive as per the model.
 
 _Confusion Matrix:_
 ![Fig 25. Polarity Experiment Result 2 - Confusion Matrix](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/Images/4_SentimentAnalysis_PredictiveModeling/2.png?raw=true)
@@ -483,7 +491,7 @@ _Confusion Matrix:_
 
 #### Fig 27. Subjectivity Experiment Result
 
-> Accuracy Score = 0.8037383177570093
+> Accuracy Score = **0.8037383177570093**
 
 ||Precision|Recall|F1-Score|Support|
 |--|--|--|--|--|
