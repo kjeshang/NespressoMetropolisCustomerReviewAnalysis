@@ -5,6 +5,10 @@
 1. [Introduction](#Introduction)
 2. [Data Scraping and Extraction](#Data-Scraping-and-Extraction)
 3. [Data Cleaning](#Data-Cleaning)
+4. [Exploratory Data Analysis](#Exploratory-Data-Analysis)
+5. [Sentiment Analysis Exploration](#Sentiment-Analysis-Exploration)
+6. [Sentiment Analysis Predictive Modeling](#Sentiment-Analysis-Predictive-Modeling)
+7. [Conclusion](#Conclusion)
 
 ## Introduction
 
@@ -129,7 +133,7 @@ Despite nearly 70% of reviewers providing a written review, when comparing the w
 
 In the histogram, it can be seen that the majority of the number of words used for written reviews are less than 150. There is also an anomaly whereby there has been a handful of reviewers that wrote around 300 words for their review. This is indicative of an anomaly occurrence whereby the reviewer may have experienced a very positive or negative experience in terms of service quality at Nespresso Metrotown branch. Despite the anomaly, the histogram indicates a right-skewed distribution with the majority of the reviews having a  word count less than 150.
 
-## Sentiment Analysis - Exploration
+## Sentiment Analysis Exploration
 
 This stage of the project, after importing the necessary packages, the cleaned Google Reviews is imported and filtered to only include reviews received from 2019 to 2022. Prior to performing any natural language processing (NLP), the Google Reviews data must be pre-processed; specifically, the **_Review_** column values for each row. NLP pre-processing is necessary to perform appropriate sentiment analysis. Below are the important steps involved in the NLP pre-processing:
 1. Perform word tokenization such that each word in the **_Review_** column value is separated by a comma in a list. Now, each word are referred to as a token.
@@ -309,7 +313,7 @@ In the bar chart, it can be seen that most reviewers that gave both 1-star and 5
 
 This bar chart emulates the bar chart in figure 18, although the emotions are measured in terms of a classification frequency that is normalized. This helps to better determine the proportion of each emotion experienced throughout all written reviews. To reiterate, a higher proportion of the reviews reflect the positive emotion, along with related emotions such as trust, anticipation, and joy. Although, a smaller proportion of reviews reflect the emotion of surprise. A sizeable proportion of reviews reflect the negative emotion, although a lower proportion of reviews reflect the related emotions such as sadness, anger, fear, and disgust.
 
-## Sentiment Analysis - Predictive Modeling
+## Sentiment Analysis Predictive Modeling
 
 The intent of this part of the project is to essentially perform a classification experiment to determine which sentiment analysis method can be used as a basis to predict polarity of written reviews. In addition, utilize the textblob dataset to determine whether a written review is objective or subjective. In a real world context, this part of the project attempts to address what predictive models could be used by Nespresso Canada to instantenously retrieve a predicted sentiment from a written Google Review. 
 
