@@ -15,7 +15,7 @@ Nespresso Metrotown management periodically refers to Google reviews to understa
 Working on this project has been a fruitful experience. I am thankful for this to be a part of my Employee Performance Development program under Nespresso & Randstad. This experience greatly improved my technical ability, but also challenged myself to consider what management would potentially be thinking about. I have written this project report in the form of a research study. Although, being a Coffee Specialist, I may have a frame of mind that may differ from that of members of staff that at a supervisory and/or management level. This could lead to analysis and interpretation of results that does not emulate the level of depth a member of staff of management level would have. Therefore, please consider consider this project with an open mind and with some scrutiny.
 
 Below is a list of the five stages the project followed through.
-1. Data Scraping/Extraction
+1. Data Scraping and Extraction
 2. Data Cleaning
 3. Exploratory Data Analysis
 4. Sentiment Analysis - Exploration
@@ -36,7 +36,7 @@ This project was completed using the following devices, tools, and technologies.
         * Microsoft Visual Studio Code; used for data scraping/extraction
         * Anaconda Navigator; used for all stages _after_ data scraping/extraction
 
-## Data Scraping/Extraction
+## Data Scraping and Extraction
 
 This is the first stage of the project but it is also the hardest. Despite customer Google Reviews being freely accessible online via Google Maps, I am unable to retrieve the data in a traditional sense (i.e., download a CSV/JSON file). Being simply a Coffee Specialist at the Boutique, I would not have access to save this data locally on an endpoint because I am neither in a management-level position nor part of the Nespresso Canada Social Media team. Therefore, the only option was to programmatically extract the data using the Selenium package and the ChromeDriver executable file. 
 
