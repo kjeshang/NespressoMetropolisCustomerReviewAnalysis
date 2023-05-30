@@ -1,6 +1,9 @@
 # NespressoMetropolisCustomerReviewAnalysis
 **Kunal Jeshang - Coffee Specialist** _(Project Timeline: January 2023 to May 2023)_
-> Report/ReadMe in Progress
+
+## Table of Contents
+[Introduction](##Introduction)
+[Data Scraping/Extraction](##Data-Scraping/Extraction)
 
 ## Introduction
 
