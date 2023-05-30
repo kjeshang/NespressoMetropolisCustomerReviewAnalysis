@@ -2,8 +2,9 @@
 **Kunal Jeshang - Coffee Specialist** _(Project Timeline: January 2023 to May 2023)_
 
 ## Table of Contents
-[Introduction](##Introduction)
-[Data Scraping/Extraction](##Data-Scraping/Extraction)
+1. [Introduction](#Introduction)
+2. [Data Scraping/Extraction](#Data-Scraping/Extraction)
+3. [Data Cleaning](#Data-Cleaning)
 
 ## Introduction
 
