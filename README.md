@@ -3,7 +3,7 @@
 
 ## Table of Contents
 1. [Introduction](#Introduction)
-2. [Data Scraping/Extraction](#Data-Scraping-and-Extraction)
+2. [Data Scraping and Extraction](#Data-Scraping-and-Extraction)
 3. [Data Cleaning](#Data-Cleaning)
 
 ## Introduction
