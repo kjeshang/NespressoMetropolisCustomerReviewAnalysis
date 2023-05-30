@@ -58,6 +58,8 @@ In other words, I coded a scraper bot to perform the following.
 11. All pandas dataframes are altogether saved in an Excel workbook, as well as individual CSV files, and then placed into a "data" folder.
 12. The scraper bot is then shutdown.
 
+Please refer to the [Scrape](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/1_Scrape.ipynb) Jupyter Notebook to view the codebase of the data scraping & extraction.
+
 ## Data Cleaning
 
 In this stage of the project, the raw Google Reviews data is imported and is cleaned for any data scraping errors & inconsistencies. There is transformation of the dataset to include new columns that are more meaningful for the later stages of the project. It is imperative to take a peek of the data by checking the first few rows and summary of column names, non-NULL count, and data types, prior to performing data cleaning & transformation. After the appropriate data cleaning & transformation steps are completed, the cleaned data is then loaded to a CSV file to be used in the next stage of the project. That being said, below is a list of the most important actions taken in this stage of the project leading up to the aforementioned data loading step.
@@ -82,6 +84,8 @@ Below is a tabular breakdown of the cleaned Google Review data in terms of colum
 |Year of Review|int64|
 |Time of Review|object|
 |Webscraping Datetime|object|
+
+Please refer to the [Data Cleaning](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/2_DataCleaning.ipynb) Jupyter Notebook to view the codebase of the data cleaning.
 
 ## Exploratory Data Analysis
 
@@ -152,6 +156,8 @@ Post-completion of NLP pre-processing, sentiment analysis is performed. There ar
 4. **Emotion Classification using Lexicon based method:** This method is able to provide numerical scores to a collection ten emotions of varying levels of positivity & negativity based on the reviews.
 
 After performing a sentiment analysis exploration using the above four methods, at least three new datasets are created using the cleaned reviews dataset to reflect the sentiment analysis results for each method. Then the newly created datasets are exported as CSV files to be used in the next stage of the project.
+
+Please refer to the [Sentiment Analysis Exploration](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/4_SentimentAnalysis_Exploration.ipynb) Jupyter Notebook to view the codebase of the sentiment analysis exploration.
 
 In the forthcoming sub-sections, the visualizations derived from each sentiment analysis method are shown, along with brief intepretations of the visualizations and analysis.
 
@@ -322,10 +328,12 @@ Vectorization methods are necessary to convert the words in the **_Review Cleane
 2. _Bag of Words_: This method takes into consideration only the frequency of words in a written review.
 
 After the words in the **_Review Cleaned_** column are vectorized, the features would be prepared to use in the classification model. Below are the four types of classification models that were used:
-1. _Logisitic Regression_
-2. _Multinomial Naive Bayes_
-3. _Decision Tree_
-4. _Support Vector Machine_
+1. _Logisitic Regression_: The idea is to find a relationship between features and probability of particular outcome.
+2. _Multinomial Naive Bayes_: Considers that the presence of a given feature is independent & unrelated to that of all other feautures.
+3. _Decision Tree_: Can be used to categorize based on prior set of questions that were answered, and follows a tree-like structure with roots, nodes, and branches.
+4. _Support Vector Machine_: Considers that the presence of a given feature may have a relationship to a certain degree to all other feautures.
+
+Please refer to the [Sentiment Analysis Predictive Modeling](https://github.com/kjeshang/NespressoMetropolisCustomerReviewAnalysis/blob/main/5_SentimentPredictiveModeling.ipynb) Jupyter Notebook to view the codebase of the sentiment analysis predictive modeling.
 
 ### Experiment - Positive, Negative, Neutral
 
